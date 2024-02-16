@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 In A Rush</title>
+    <link rel ="stylesheet" href = "asset/page.css">
+    <link rel ="stylesheet" href = "asset/tutorial.css">
+</head>
+<body>
+    <audio id="myAudio" src="asset/lagu2.mp3"></audio>
+    <div class="loader">            
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+      </div>
+    <div id = "header">
+        <div id = "left-section">
+            <img id = "temp" src="asset/off.png" alt="Hidden Image"> 
+        </div>
+        <h1 id ="judul">24 In A Rush</h1>
+        <div id="sound-container" >
+            <img id="mysound" src="asset/off.png"    alt="sound" onclick="changeImage()">
+        </div>
+    </div>
+    <main>
+        <div class = "tutor-box">
+            <p class = "content">How To Play</p>
+            <div class = "explanation">
+                <p>
+                    Your goal is to use all 4 given numbers and basic arithmetics (+ - x and /) to get 24 as fast as you can. To play the math 24 game on this site or on the apps we built, you don't ever need parenthesis. If you found a solution for (a,b,c,d) as a x (b - c) + d, you simply click b,-,c,x,a,+,d in that order. Our game will combine the intermediate result into one number and you never need to input a parenthesis.
+                </p>
+            </div>
+        </div>
+        <div class="undo">
+            <img id = "undoimg" src = "asset/undo.png" altr = "Back" onclick="back()"class="btn js-trigger-transition">
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js"></script>
+
+    <script src = "asset/tutorial.js"></script>
+</body>
+</html>
